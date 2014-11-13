@@ -1,0 +1,17 @@
+.button {
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.button-download {
+  box-sizing: border-box;
+  @extend .button;
+  height: 40px;
+
+  font-weight: 600;
+  padding: 7px 10px 0 10px;
+  border: 1px solid $button-download-border-color;
+  color: $button-download-font-color;
+  background-image: $button-download-gradient;
+  width: 150px; /* TODO Remove this when icon is added! */
+}

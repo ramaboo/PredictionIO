@@ -1,0 +1,36 @@
+#toc {
+  display: none;
+  right: 0;
+  position: absolute;
+  z-index: 1000;
+  border-left: 1px solid $border-color;
+  border-bottom: 1px solid $border-color;
+  background-color: $toc-background-color;
+  padding: 10px 20px 20px 20px;
+
+  ul {
+    list-style-type: decimal;
+    margin: 0;
+    padding: 0;
+    padding-left: 20px;
+    font-size: 16px;
+    line-height: 26px;
+    color: $toc-font-color;
+    ul {
+      list-style-type: disc;
+      font-size: 14px;
+      line-height: 24px;
+    }
+  }
+
+  h2 {
+    font-size: 20px;
+    font-weight: 400;
+    color: $toc-heading-color;
+    padding: 0 10px 5px 0;
+    margin: 0;
+
+  }
+
+}
+

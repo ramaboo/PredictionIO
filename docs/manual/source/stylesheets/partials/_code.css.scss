@@ -1,0 +1,25 @@
+.highlight {
+  overflow: auto;
+  background-color: $code-background-color;
+  border: 1px solid $code-border-color;
+  border-radius: 5px;
+  font-family: $code-font-family;
+  font-size: 14px;
+  line-height: 18px;
+  pre {
+    margin: 0;
+  }
+  td {
+
+    &.gutter {
+      border-right: 1px solid $code-border-color;
+      padding: 10px 10px 10px 10px;
+      background-color: $code-line-numbers-background-color;
+      color: $code-line-numbers-font-color;
+    }
+    &.code {
+      padding: 10px 10px 10px 10px;
+    }
+
+  }
+}
