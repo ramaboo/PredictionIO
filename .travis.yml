@@ -19,3 +19,11 @@ deploy:
   endpoint: docs.prediction.io.s3-website-us-east-1.amazonaws.com
   local-dir: docs/manual/build
   detect_encoding: true
+  on: develop
+
+
+branches:
+  only:
+    - develop
+    - master
+    - livedoc

@@ -28,3 +28,7 @@ Fix gitignore
 
 Fix links
 
+fix file names
+
+
+add 404
