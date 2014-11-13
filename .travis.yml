@@ -17,7 +17,7 @@ deploy:
   bucket: docs.prediction.io
   skip_cleanup: true
   endpoint: docs.prediction.io.s3-website-us-east-1.amazonaws.com
-  local-dir: docs/manual/build
+  local-dir: build
   detect_encoding: true
   on: develop
 

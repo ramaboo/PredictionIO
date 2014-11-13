@@ -30,5 +30,6 @@ Fix links
 
 fix file names
 
+update .travis.yml file with correct credentials
 
 add 404
