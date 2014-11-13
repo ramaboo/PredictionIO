@@ -23,3 +23,8 @@ $ bundle exec middleman build
 Remove fonts!
 
 Remove readme
+
+Fix gitignore
+
+Fix links
+
