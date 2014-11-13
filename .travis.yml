@@ -4,6 +4,7 @@ rvm:
 gemfile: docs/manual/Gemfile
 script:
   - cd docs/manual
+  - bower install
   - bundle exec middleman build
 
 
