@@ -11,6 +11,7 @@ gem 'slim'
 gem 'therubyracer'
 gem 'oj'
 gem 'redcarpet'
+gem 'travis'
 
 platforms :mswin, :mingw do
   gem 'tzinfo-data'

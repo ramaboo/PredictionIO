@@ -1,0 +1,15 @@
+language: ruby
+rvm:
+  - 2.1.3
+
+deploy:
+  provider: s3
+  access_key_id:
+    secure: "a13wLlImxb7/Nzby5XLVhMZRhoNukkiazjkAJlmPePozXZ4M0wNzY/RjSyzPK1a/RNd4EtgyNI3zRLhkYXsLpO45qe6gx8tupK1A0eaVTcGN/1wmhDiKu68SxCb4jhB4tRFW2+eb732JfpabNeCfWvFnEGwhS5WtcVdL2lD5J9Y="
+  secret_access_key:
+    secure: "TilB9hi299wfJk5zgfznu5oVKNOKLlwwIToq76UhDKqVSF44MrooSVT6fOrzyWTKs98F/TSUcYx7ip1ipyTxvJ8HWYHF1Sr+8/BJHsPfyTh0gLh5IiHMAzXTIjq7RPo7xa6COqw7yxXz/kjqbKC9rLC0/0kKHZU4uvw5Ec0EOsg="
+  bucket: docs.prediction.io
+  skip_cleanup: true
+  endpoint: docs.prediction.io.s3-website-us-east-1.amazonaws.com
+  local-dir: docs/manual/build
+  detect_encoding: true
