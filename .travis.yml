@@ -2,11 +2,16 @@ language: ruby
 rvm:
   - 2.1.3
 gemfile: docs/manual/Gemfile
+
 script:
   - cd docs/manual
   - bundle exec middleman build
 
-
+branches:
+  only:
+    - develop
+    - master
+    - livedoc
 
 deploy:
   provider: s3
@@ -14,17 +19,11 @@ deploy:
     secure: "duN9qO+AlXMDKsVgChAplEVg3CRLevasNyHcbxjFesNJYRybOQqKIG1Ztdm14qHGn+l8vDxScDTto9qLjgPQhTKxcWZM/JIppDa2K9OJLUeacX5oDyfPqpXJbU4ucRG9Bj4p6mpeVUXPR546jqsXMqj1A8evUDgj2L50ztPN3IQ="
   secret_access_key:
     secure: "hcKVgp3EN3Sdsxm0kqllX8sj368kHsodhJ7DRsw7Jtm+eEWD744mUyoO+4CNxT8j3lbB0sbuU/+mZDmkOfSO4m3m6JB46WAmBDXwVSi0tJ1Uroh44mjK1u/nXDuSoFo3sNJPK7+EX4aUXAjxlOG+yfGN0VICHym5HJOaJ/B23cI="
-  bucket: "docs.prediction.io"
-  region: "us-east-1"
+  bucket: docs.prediction.io
+  region: us-east-1
   skip_cleanup: true
-  endpoint: "docs.prediction.io.s3-website-us-east-1.amazonaws.com"
+  endpoint: docs.prediction.io.s3-website-us-east-1.amazonaws.com
   local-dir: build
   detect_encoding: true
   on: develop
 
-
-branches:
-  only:
-    - develop
-    - master
-    - livedoc
