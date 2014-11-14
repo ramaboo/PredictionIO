@@ -11,12 +11,13 @@ script:
 deploy:
   provider: s3
   access_key_id:
-    secure: "a13wLlImxb7/Nzby5XLVhMZRhoNukkiazjkAJlmPePozXZ4M0wNzY/RjSyzPK1a/RNd4EtgyNI3zRLhkYXsLpO45qe6gx8tupK1A0eaVTcGN/1wmhDiKu68SxCb4jhB4tRFW2+eb732JfpabNeCfWvFnEGwhS5WtcVdL2lD5J9Y="
+    secure: "duN9qO+AlXMDKsVgChAplEVg3CRLevasNyHcbxjFesNJYRybOQqKIG1Ztdm14qHGn+l8vDxScDTto9qLjgPQhTKxcWZM/JIppDa2K9OJLUeacX5oDyfPqpXJbU4ucRG9Bj4p6mpeVUXPR546jqsXMqj1A8evUDgj2L50ztPN3IQ="
   secret_access_key:
-    secure: "TilB9hi299wfJk5zgfznu5oVKNOKLlwwIToq76UhDKqVSF44MrooSVT6fOrzyWTKs98F/TSUcYx7ip1ipyTxvJ8HWYHF1Sr+8/BJHsPfyTh0gLh5IiHMAzXTIjq7RPo7xa6COqw7yxXz/kjqbKC9rLC0/0kKHZU4uvw5Ec0EOsg="
-  bucket: docs.prediction.io
+    secure: "UvuGdt3L7PkZehx0YSsXvDwHDFIvC5NkwjfBo+tLD/3/qYgFUZIbmtSbTCMqgG/P0H/xu7KGIZ8BRmcL71dVE9Uj+0kWjBMBak0XQFegEhZrehmLTJpSO+nm5Au1PthWaoA1YePVZmeXKagoDuWboMTXZ0ZZqFGuVFWQYU9MuSU="
+  bucket: "docs.prediction.io"
+  region: "us-east-1"
   skip_cleanup: true
-  endpoint: docs.prediction.io.s3-website-us-east-1.amazonaws.com
+  endpoint: "docs.prediction.io.s3-website-us-east-1.amazonaws.com"
   local-dir: build
   detect_encoding: true
   on: develop
