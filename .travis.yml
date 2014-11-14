@@ -13,7 +13,7 @@ deploy:
   access_key_id:
     secure: "duN9qO+AlXMDKsVgChAplEVg3CRLevasNyHcbxjFesNJYRybOQqKIG1Ztdm14qHGn+l8vDxScDTto9qLjgPQhTKxcWZM/JIppDa2K9OJLUeacX5oDyfPqpXJbU4ucRG9Bj4p6mpeVUXPR546jqsXMqj1A8evUDgj2L50ztPN3IQ="
   secret_access_key:
-    secure: "UvuGdt3L7PkZehx0YSsXvDwHDFIvC5NkwjfBo+tLD/3/qYgFUZIbmtSbTCMqgG/P0H/xu7KGIZ8BRmcL71dVE9Uj+0kWjBMBak0XQFegEhZrehmLTJpSO+nm5Au1PthWaoA1YePVZmeXKagoDuWboMTXZ0ZZqFGuVFWQYU9MuSU="
+    secure: "hcKVgp3EN3Sdsxm0kqllX8sj368kHsodhJ7DRsw7Jtm+eEWD744mUyoO+4CNxT8j3lbB0sbuU/+mZDmkOfSO4m3m6JB46WAmBDXwVSi0tJ1Uroh44mjK1u/nXDuSoFo3sNJPK7+EX4aUXAjxlOG+yfGN0VICHym5HJOaJ/B23cI="
   bucket: "docs.prediction.io"
   region: "us-east-1"
   skip_cleanup: true
