@@ -8,10 +8,10 @@
     padding: 0;
     display: inline-block;
     width: 100%;
+    list-style-type: none;
   }
   a {
     color: $nav-main-link-color;
-    text-decoration: none;
     box-sizing: border-box;
   }
 
