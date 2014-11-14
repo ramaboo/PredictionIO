@@ -35,8 +35,8 @@ sprockets.append_path File.join root, 'vendor/assets'
 # Development Settings
 configure :development do
   set :scheme, 'http'
-  set :host, Middleman::PreviewServer.host
-  set :port, Middleman::PreviewServer.port
+  set :host, Middleman::PreviewServer.host rescue 'localhost'
+  set :port, Middleman::PreviewServer.port rescue 80
   Slim::Engine.set_default_options pretty: true, sort_attrs: false
   set :debug_assets, true
 end
@@ -71,3 +71,10 @@ end
 
 # Hacks
 Slim::Engine.disable_option_validator! # https://github.com/middleman/middleman/issues/612
+
+# CloudFront
+activate :cloudfront do |cf|
+  cf.access_key_id = ENV['AWS_ACCESS_KEY_ID']
+  cf.secret_access_key = ENV['AWS_SECRET_ACCESS_KEY']
+  cf.distribution_id = ENV['CF_DISTRIBUTION_ID']
+end
