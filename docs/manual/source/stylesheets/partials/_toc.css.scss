@@ -1,11 +1,6 @@
 #toc {
-  display: none;
-  right: 0;
-  position: absolute;
-  z-index: 1000;
   background-color: $toc-background-color;
   padding: 10px 20px 20px 20px;
-  min-width: 200px;
 
   ul {
     list-style-type: decimal;

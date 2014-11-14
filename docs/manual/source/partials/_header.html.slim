@@ -1,4 +1,5 @@
 header#header
-  == link_to 'PredictionIO', 'http://prediction.io/', class: 'logo hide-text'
-  == partial 'nav/header'
-  == link_to 'Download', '/download', class: 'button-download'
+  = link_to '<i class="fa fa-bars"></i>', '/', id: 'nav-main-menu-button', class: 'sb-toggle-left'
+  = link_to 'PredictionIO', 'http://prediction.io/', class: 'logo hide-text'
+  = partial 'nav/header'
+  = link_to 'Download', '/download', class: 'button-download'

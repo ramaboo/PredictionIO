@@ -11,11 +11,17 @@
     background-image: url(/images/logos/header.png);
     margin: 29px 0 28px 15px;
     float: left;
+    @include medium {
+      display :none;
+    }
   }
   .button-download {
     float: right;
     display: block;
     margin: 25px 15px 25px 0;
+    @include large {
+      display: none;
+    }
   }
 }
 
