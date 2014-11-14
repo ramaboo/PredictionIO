@@ -242,7 +242,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  fog
   middleman (~> 3.3.6)
   middleman-autoprefixer
   middleman-cloudfront

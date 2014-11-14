@@ -7,7 +7,6 @@ gem 'middleman-autoprefixer'
 gem 'middleman-minify-html'
 gem 'middleman-syntax'
 gem 'middleman-cloudfront'
-gem 'fog'
 
 gem 'slim'
 gem 'therubyracer'

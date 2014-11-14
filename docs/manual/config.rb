@@ -13,17 +13,7 @@ activate :syntax, line_numbers: true
 
 # Markdown
 set :markdown_engine, :redcarpet
-set :markdown,
-  renderer: ::CustomRenderer,
-  fenced_code_blocks: true,
-  with_toc_data: true,
-  no_intra_emphasis: true,
-  autolink: true,
-  strikethrough: true,
-  superscript: true,
-  highlight: true,
-  underline: true,
-  tables: true
+set :markdown, renderer: ::CustomRenderer
 
 
 
