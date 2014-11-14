@@ -2,7 +2,7 @@ env:
   global:
     - secure: "UKsdCiTc9APZ5gjE6nidw+xJKOv0yfGDUtNEp+Zldo20QPA0yx/ESjtb4UOhqw7iqraLsIKU315xWhb7PEFiVgxtMUhDzwWY+dN6klMDhbTovAb0GQH8a07yCQ2cNX2/xm75RmBAZb5lmdR45t/QXdqwzjQ+i1cbRsGOYIHNkLk="
     - secure: "Xz1UJTWIRoTclqewsTv5jInihZowciFd5l/0wi2JpUQO2pVqcKKgMRuedzUCtyqe5xroDIhTs9bwwwRtYzcjFTS9gqgVRX0Ak0pEUrP0X0torTXaEzbuDKq5xf8tXtd2MCChDGi67i/6uy+2j9uoiN/DuhTxoCfUAjgGWWpYeso="
-    CF_DISTRIBUTION_ID=E2KH6C4FF8P5BK
+    - CF_DISTRIBUTION_ID=E2KH6C4FF8P5BK
 language: ruby
 rvm:
   - 2.1.3
