@@ -1,5 +1,6 @@
 #nav-header {
   display: inline-block;
+  margin: 0 25px 0 0;
   ul {
     padding: 0;
     margin: 32px 0 32px 0;
@@ -13,7 +14,12 @@
   }
   a {
     font-weight: 400;
-    color: $nav-header-font-color;
+    color: $nav-header-link-color;
     font-size: 18px;
+  }
+
+
+  @include medium {
+    display :none;
   }
 }

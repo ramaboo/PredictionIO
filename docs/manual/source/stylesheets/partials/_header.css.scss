@@ -1,24 +1,23 @@
 #header {
   height: 90px;
-  text-align: center;
+  text-align: right;
   background-color: $header-background-color;
   border-bottom: 1px solid $border-color;
 
   .logo {
-    width: 300px;
-    height: 33px;
+    width: 200px;
+    height: 22px;
     display: block;
     background-image: url(/images/logos/header.png);
-    margin: 29px 0 28px 15px;
+    margin: 34px 0 34px 25px;
     float: left;
-    @include medium {
-      display :none;
-    }
   }
+
   .button-download {
+    text-align: center;
     float: right;
     display: block;
-    margin: 25px 15px 25px 0;
+    margin: 25px 25px 25px 0;
     @include large {
       display: none;
     }

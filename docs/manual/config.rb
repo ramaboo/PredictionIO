@@ -13,14 +13,20 @@ activate :syntax, line_numbers: true
 
 # Markdown
 set :markdown_engine, :redcarpet
-set :markdown, renderer: ::CustomRenderer
-
-
+set :markdown,
+    renderer: ::CustomRenderer,
+    fenced_code_blocks: true,
+    no_intra_emphasis: true,
+    autolink: true,
+    strikethrough: true,
+    superscript: true,
+    highlight: true,
+    underline: true,
+    tables: true
 
 # Sprockets
 sprockets.append_path File.join root, 'bower_components'
 sprockets.append_path File.join root, 'vendor/assets'
-
 
 # Development Settings
 configure :development do

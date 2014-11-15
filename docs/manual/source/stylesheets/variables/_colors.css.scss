@@ -1,10 +1,7 @@
-// TODO Rename some variables from font to link to better denote usage!
-
-
 // General
 $link-color: #1ba4d8;
 $border-color: #e3e3e3;
-$header-background-color: #f2f9fe;
+$header-background-color: #eaf6fc;
 $page-title-font-color: #1d78a6;
 $off-canvas-background-color: #434445;
 
@@ -27,7 +24,7 @@ $todo-color: #808080;
 $todo-background-color: #e5e5e5;
 
 // Nav
-$nav-header-font-color: #373535;
+$nav-header-link-color: #373535;
 
 $nav-main-link-color: $link-color;
 $nav-main-icon-color: #484848;
@@ -45,9 +42,8 @@ $nav-main-level-2-active-background-color: #ffffff;
 $nav-main-level-2-active-border-color: #da1111;
 
 // Buttons
-$button-download-border-color: #1191d0;
 $button-download-font-color: #ffffff;
-$button-download-gradient: linear-gradient(0deg, #0f99dd 0%, #2db0f0 100%);
+$button-download-background-color: #0f99dd;
 
 
 // Code Blocks

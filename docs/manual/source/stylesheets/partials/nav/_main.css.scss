@@ -13,6 +13,9 @@
   a {
     color: $nav-main-link-color;
     box-sizing: border-box;
+    &:hover {
+      text-decoration: none;
+    }
   }
 
   & > ul {
@@ -28,7 +31,7 @@
         border-bottom: 1px solid $border-color;
         min-height: 50px;
         display: block;
-        font-size: 18px;
+        font-size: 16px;
         font-weight: 400;
 
         color: $nav-main-level-1-font-color;
@@ -77,7 +80,7 @@
   float: left;
   font-size: 40px;
   height: 40px;
-  margin: 25px 20px 25px 20px;
+  margin: 25px 0 25px 20px;
   color: $nav-main-menu-button-color;
   display: none;
   i {

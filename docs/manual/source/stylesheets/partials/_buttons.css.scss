@@ -6,11 +6,20 @@
   box-sizing: border-box;
   @extend .button;
   height: 40px;
-
+  font-size: 16px;
+  line-height: 24px;
   font-weight: 600;
-  padding: 7px 10px 0 10px;
-  border: 1px solid $button-download-border-color;
+  padding: 7px 25px 0 25px;
+  background-color: $button-download-background-color;
   color: $button-download-font-color;
-  background-image: $button-download-gradient;
-  width: 150px; /* TODO Remove this when icon is added! */
+
+  &:hover {
+    text-decoration: none;
+  }
+  i {
+    font-size: 24px;
+    line-height: 24px;
+    vertical-align: bottom;
+    margin-right: 8px;
+  }
 }

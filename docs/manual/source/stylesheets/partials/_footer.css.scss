@@ -38,4 +38,15 @@
     font-weight: 400;
     color: $footer-heading-2-color;
   }
+
+}
+
+@include medium {
+  #footer {
+    display: inline-block;
+    justify-content: flex-start;
+  }
+  .column {
+    width: 100%;
+  }
 }

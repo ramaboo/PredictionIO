@@ -2,17 +2,7 @@ require 'middleman-core/renderers/redcarpet'
 
 class CustomRenderer < Middleman::Renderers::MiddlemanRedcarpetHTML
   def initialize(options = {})
-    defaults = {
-      fenced_code_blocks: true,
-      with_toc_data: true,
-      no_intra_emphasis: true,
-      autolink: true,
-      strikethrough: true,
-      superscript: true,
-      highlight: true,
-      underline: true,
-      tables: true
-    }
+    defaults = { with_toc_data: true }
     super(defaults.merge(options))
   end
 
