@@ -1,5 +1,3 @@
-nav.nav-page
-  ul
-    li = link_to '<i class="fa fa-pencil"></i>', github_url
-    li = link_to '<i class="fa fa-list-alt"></i>', '#', id: 'nav-page-toc-button', class: 'sb-toggle-right'
-
+nav#nav-page
+  = link_to '<i class="fa fa-pencil"></i>', github_url, class: 'github'
+  = link_to '<i class="fa fa-list-alt"></i>', '/', id: 'active-complementary'

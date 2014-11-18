@@ -1,5 +1,5 @@
 ---
-title: Sizing Samples
+title: Sizing Samples with an Extra Long Title to Show Wrapping
 ---
 
 # Long Text

@@ -15,25 +15,16 @@ html
       = javascript_include_tag '//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js'
     = partial 'google_analytics'
   body
-    #sb-site
-      #global
-        = partial 'header'
-        .container
-          = partial 'nav/main'
-          #main
-            #page
-              = partial 'nav/page'
 
-              = page_title
-
-
-
-            #content
-
-              = yield
-
-        = partial 'footer'
-        = partial 'copyright'
-    = partial 'nav/slidebars/left'
-    = partial 'nav/slidebars/right'
+    #global
+      = partial 'header'
+      .container
+        = partial 'nav/main'
+        #main role="main"
+          = partial 'page_title'
+          #content
+            = yield
+        == table_of_contents(current_page)
+      = partial 'footer'
+      = partial 'copyright'
     = javascript_include_tag  'application'

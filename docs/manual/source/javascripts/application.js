@@ -1,5 +1,4 @@
 //= require 'jquery'
-//= require 'slidebars'
 
 $(document).ready(function() {
 
@@ -17,6 +16,18 @@ $(document).ready(function() {
     //$('#toc').toggle();
   //});
 
-  // Slidebars
-  $.slidebars();
+
+
+
+  $('#active-navigation').on('click', function(event) {
+    event.preventDefault();
+    $('body').toggleClass('active-navigation').removeClass('active-complementary')
+  });
+
+  $('#active-complementary').on('click', function(event) {
+    event.preventDefault();
+    $('body').toggleClass('active-complementary').removeClass('active-navigation')
+  });
+
+
 });

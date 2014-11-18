@@ -1,33 +1,16 @@
 
 
 #global {
-  display: inline-block;
-  width: 100%;
   min-width: 320px;
+  width: 100%;
+  overflow: hidden;
 }
 
 #main {
-  overflow: hidden;
+  background-color: $main-background-color;
 
 }
 
-#page {
-  border-bottom: 1px solid $border-color;
-  overflow: hidden;
-  height: auto;
-
-  h1 {
-    margin: 0;
-    width: auto;
-    overflow: hidden;
-    font-size: 25px;
-    padding: 8px 15px 0 15px;
-    color: $page-title-font-color;
-    &.missing {
-      color: $danger-color;
-    }
-  }
-}
 
 #content {
   padding: 0 20px 0 20px;

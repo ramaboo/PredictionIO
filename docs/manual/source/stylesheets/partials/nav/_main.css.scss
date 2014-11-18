@@ -1,8 +1,4 @@
 .nav-main {
-  width: 300px;
-
-  border-right: 1px solid $border-color;
-  float: left;
   ul {
     margin: 0;
     padding: 0;
@@ -69,25 +65,4 @@
 }
 
 
-@include medium {
-  #sb-site .nav-main {
-    display: none;
-  }
-}
 
-
-#nav-main-menu-button {
-  float: left;
-  font-size: 40px;
-  height: 40px;
-  margin: 25px 0 25px 20px;
-  color: $nav-main-menu-button-color;
-  display: none;
-  i {
-    vertical-align: top;
-  }
-
-  @include medium {
-    display: block;
-  }
-}
