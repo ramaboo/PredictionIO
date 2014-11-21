@@ -5,12 +5,16 @@
     display: inline-block;
     width: 100%;
     list-style-type: none;
+    border-right: 1px solid $border-color;
+    box-sizing: border-box;
   }
   a {
     color: $nav-main-link-color;
     box-sizing: border-box;
     &:hover {
       text-decoration: none;
+      background-color: $nav-main-hover-background-color;
+      color: $nav-main-hover-link-color;
     }
   }
 
@@ -37,7 +41,15 @@
       // Level 2
       ul {
         display: none;
+        border: none;
       }
+
+      &.expand {
+        ul {
+          display: block;
+        }
+      }
+
       li {
         background-color: $nav-main-level-2-even-background-color;
         border-bottom: 1px solid $border-color;
@@ -50,13 +62,15 @@
           display: block;
           padding: 8px 0 8px 25px;
           line-height: 20px;
-          &:hover {
-            background-color: $nav-main-level-2-hover-background-color;
-          }
+
           &.active {
             background-color: $nav-main-level-2-active-background-color;
             border-left: 6px solid $nav-main-level-2-active-border-color;
             padding-left: 19px;
+            color: $nav-main-level-2-active-link-color;
+            &:hover {
+              color: $nav-main-level-2-active-link-color;
+            }
           }
         }
       }

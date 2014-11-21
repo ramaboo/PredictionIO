@@ -10,14 +10,6 @@ $(document).ready(function() {
 
   $('.nav-main .active').parent().parent().show();
 
-  // Page Navigation
-//  $('#nav-page-toc').on('click', function(event) {
-  //  event.preventDefault();
-    //$('#toc').toggle();
-  //});
-
-
-
 
   $('#active-navigation').on('click', function(event) {
     event.preventDefault();

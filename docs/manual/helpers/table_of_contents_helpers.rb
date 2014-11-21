@@ -1,10 +1,19 @@
 module TableOfContentsHelpers
   def table_of_contents(resource)
-    content = File.read(resource.source_file)
-    markdown = Redcarpet::Markdown.new(Redcarpet::Render::HTML_TOC.new(nesting_level: 2))
-    content_tag :aside, id: 'table-of-contents', role: 'complementary' do
-      markdown.render(remove_front_matter_data(content))
+    content = remove_front_matter_data(File.read(resource.source_file))
+    extension = File.extname(resource.source_file)[1..-1] # Trim the first dot.
+
+    if extension != 'md'
+      # Render other extensions first if they exist.
+      template = Tilt[extension].new { content }
+      content = template.render(self, resource.data)
     end
+
+    # Now the custom Markdown TOC.
+    markdown = Redcarpet::Markdown.new(Redcarpet::Render::HTML_TOC.new(nesting_level: 2))
+    output = markdown.render(content)
+
+    content_tag :aside, output, id: 'table-of-contents', role: 'complementary'
   end
 
   private

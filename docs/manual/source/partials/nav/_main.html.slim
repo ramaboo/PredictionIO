@@ -1,30 +1,30 @@
 nav.nav-main role="navigation"
   ul
-    li
+    li.expand
       = link_to 'Getting Started', '#'
       ul
-        li = link_to 'Overview', '#'
-        li = link_to 'Installing PredictionIO', '#'
-        li = link_to 'Engine Concepts', '#'
-    li
+        li = link_to_with_active 'Overview', '/'
+        li = link_to_with_active 'Installing PredictionIO', '#'
+        li = link_to_with_active 'Engine Concepts', '#'
+    li.expand
       = link_to 'Recommendation Template', '#'
       ul
-        li = link_to 'Quick Start', '#'
-        li = link_to 'DASE Components Explained', '#'
-        li = link_to 'Customizing Data Preparator Component', '#'
+        li = link_to_with_active 'Quick Start', '#'
+        li = link_to_with_active 'DASE Components Explained', '#'
+        li = link_to_with_active 'Customizing Data Preparator Component', '#'
     li
       = link_to 'Evaluation and Tuning', '#'
       ul
-        li = link_to 'Overview', '#'
+        li = link_to_with_active 'Overview', '#'
     li
       = link_to 'Get Involved', '#'
       ul
-        li = link_to 'Report a Bug', '#'
-        li = link_to 'Contribute Code', '#'
-        li = link_to 'Write Documentation', '#'
-        li = link_to 'Contributor Agreement', '#'
-        li = link_to 'Community Projects', '#'
-        li = link_to 'Credits'
+        li = link_to_with_active 'Report a Bug', '#'
+        li = link_to_with_active 'Contribute Code', '#'
+        li = link_to_with_active 'Write Documentation', '#'
+        li = link_to_with_active 'Contributor Agreement', '#'
+        li = link_to_with_active 'Community Projects', '#'
+        li = link_to_with_active 'Credits', '#'
     li
       = link_to 'SDKs and Plugins', '#'
       ul
