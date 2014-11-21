@@ -13,6 +13,8 @@ gem 'therubyracer'
 gem 'oj'
 gem 'redcarpet'
 gem 'travis'
+gem 'nokogiri'
+gem 'rainbow'
 
 platforms :mswin, :mingw do
   gem 'tzinfo-data'

@@ -17,6 +17,7 @@ branches:
 script:
   - cd docs/manual
   - bundle exec middleman build
+  - bundle exec middleman server &
 deploy:
   provider: s3
   access_key_id:

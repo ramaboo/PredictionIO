@@ -1,0 +1,16 @@
+require 'nokogiri'
+require 'rainbow'
+
+desc 'Check site for broken links'
+task :check do
+  Dir["build/**/*.html"].each do |file|
+    f = File.open(file)
+    doc = Nokogiri::XML(f)
+    doc.css('a').each do |link|
+      puts link['href']
+    end
+    f.close
+    exit
+  end
+end
+
