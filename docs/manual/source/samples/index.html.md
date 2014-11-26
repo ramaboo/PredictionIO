@@ -39,10 +39,6 @@ This message is longer to demonstrate what a multi line message would look like.
 Yes **bold** and other styling still work inside alerts!
 
 
-
-
-
-
 # Text
 
 This is the normal paragraph font.

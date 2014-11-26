@@ -1,4 +1,5 @@
 //= require 'jquery'
+//= require 'Tabslet'
 
 $(document).ready(function() {
 
@@ -21,5 +22,6 @@ $(document).ready(function() {
     $('body').toggleClass('active-complementary').removeClass('active-navigation')
   });
 
-
+  // Tabslet
+  $('.tabs').tabslet();
 });
